@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* display : 요소가 화면에 보이는 방식 지정 */
+
+        /* 1) dispaly가 block인 경우 
+          종류 :  div,p,...=> 디폴트 값 :block 
+        무조건 가로로 한 줄의 영역을 차지
+        width,height설정 가능*/
+
+        div{
+            background-color: pink;
+            width: 200px;
+            height: 200px;
+            display: inline;
+        }
+
+        /* 2) dispaly가 inline인 경우
+           종류 : span,a.....=> 디폴드 값 : inline
+        내가 담은 내용을 크기로 삼는 속성 
+        width,height 설정 불가*/
+
+        span{
+            background-color: skyblue;
+            width: 200px;
+            height: 200px;
+            display: block;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div>div태그</div>
+    <div>div태그</div>
+    <div>div태그</div>
+    <span>span태그</span>
+    <span>span태그</span>
+    <span>span태그</span>
+</body>
+</html>

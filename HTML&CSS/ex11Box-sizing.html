@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* 내가 설정한 너비 (content) */
+            width: 500px;
+
+             /* 안쪽 여백 */
+            padding: 20px;
+
+            /* 경계선 */
+            border: 20px solid green;
+           
+        }
+        /* Box Sizing :요소의 크기를 화면에 표시하는 방식 */
+        /* 1) content-Box 
+        내가 설정한 너비값 == 컨텐츠의 너비
+        box-sizing의 기본 값
+        컨텐츠 영역만을 크기로 삼는 속성으로
+        패딩/보더 값이 추가로 들어가면 그만큼 전체 도형의 크기가 커짐*/
+
+        /* 2) border-Box
+        내가 설정한 너비 ==보더까지의 너비
+        content+border+padding =내가 설정한 너비
+        padding,border을 넣어도 전체크기는 커지지 않으며 content의 크기만 작아짐*/
+        .bb{
+            box-sizing: border-box;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="cb">
+        <p>content-box</p>
+    </div>
+    <div class="bb">
+        <p>border-box</p>
+    </div>
+</body>
+</html>

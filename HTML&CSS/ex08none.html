@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* display가 none인 경우 */
+         .answer{
+            display: none;
+         }
+
+         /* 
+         1. 마우스를 질문위에 올린다면 => 질문위에 hover
+         2. 질문과 근접후헹관게인 답을 보여주자 => +
+         3. 답을 한 줄 밑에 뜨도록 => dispaly : block
+         */
+
+            .question:hover+.answer{
+                display: block;
+            }
+
+    
+
+
+    </style>
+</head>
+<body>
+    <h3>dispaly: none</h3>
+    <span class="question">Q. 제가 가장 좋아하는 음료는 무엇일끼요?</span>
+    <span class="answer">
+        A. 아이스 아메리카노, 바닐라 라떼, 매실차
+    </span>
+
+    <!-- Q.저의 MBTI는 무엇일까요?
+         A. XXXX
+        단,css는 수정할 필요 없음 -->
+     <br>
+    
+    <span class="question">Q. 저의 MBTI는 무엇일까요?</span>
+    <span class="answer">
+        A. ISFJ입니다.
+    </span>
+    
+    
+</body>
+</html>

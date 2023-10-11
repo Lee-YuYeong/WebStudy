@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .container{
+        background-color: whitesmoke;
+        height: 500px;
+
+        /* container 작성요소 */
+
+        /* 1) display : flex 
+        =>flex설정,flex와 관련된 기능 사용 도와줌*/
+        display: flex;
+
+        /* 2) 배치방향 설정 */
+
+        /* 2-1) column ,column-reverse: 메인축이 세로로 정렬 / 서브축 : 가로 */
+        flex-direction: columne;
+
+        /* 2-2) row,row-reverse
+         ==> defult
+         메인축 : 가로
+         서브축 : 세로(수직) */
+         flex-direction: row;
+
+         /* 2-3) 메인축 정렬 :justify-content: ; */
+         justify-content: center;
+         /* justify-content: space-around; */
+
+         /* 2-4) 서브축 정렬 : align-items */
+         align-items: center;
+        }
+    .item{
+        background-color: skyblue;
+        width: 100px;
+        height: 100px;
+        border: 1px solid navy;
+        /* item요소에게 작성해야되는 것 */
+        /* flex-basis: : 아이템의 기본적의 크기설정; */
+        flex-basis: 15%;
+    }
+    #center{
+        flex-basis: 70%;
+        /* 첫 구조를 잡을 떈 item의 역할
+        두번째 구조에선 container의 역할
+        즉 '안녕하세요'가 item임 */
+        display: flex;
+        /* 메인 축 정렬 */
+        justify-content: center; 
+        /* 서브 축 정렬 */
+        align-items: center;   
+    }
+    </style>
+</head>
+<body>
+    <!-- flex 사용할 때 ,container, item을 구분 
+    내가 위치를 옮겨주거나 레이아웃을 바꾸고 싶은 요소 : item
+    그 item 이 속해있는 부모요소 : container
+    container와 item의 관계는 절대적이 아님-->
+
+    <div class="container">
+    <div class="item"></div>
+    <div class="item" id="center">
+        <span>안녕하세요?</span>
+        <!-- 안녕하세요를 두번째 공간의 가운데로 위치해보기 -->
+    </div>
+    <div class="item"></div>
+    </div>
+
+</body>
+</html>
